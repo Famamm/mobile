@@ -1,0 +1,28 @@
+name: fleettops_workspace
+publish_to: none
+
+environment:
+  sdk: ^3.9.0
+
+workspace:
+  - apps/FleetOps-mobile
+  - packages/core
+  - packages/shared
+
+dev_dependencies:
+  melos: ^7.0.0
+  flutter_lints: ^6.0.0
+
+melos:
+  scripts:
+    analyze:
+      run: melos exec -- "flutter analyze"
+      description: Analyze all packages in the workspace
+
+    clean:
+      run: melos exec -- "flutter clean"
+      description: Clean all packages
+
+    format:
+      run: melos exec -- "dart format . --set-exit-if-changed"
+      description: Check formatting

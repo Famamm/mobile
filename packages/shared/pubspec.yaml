@@ -1,0 +1,35 @@
+name: shared
+description: Reusable UI components and widgets
+publish_to: none
+resolution: workspace
+
+environment:
+  sdk: ^3.9.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  core:
+    path: ../core
+
+  fleetops_mobile:
+    path: ../../apps/FleetOps-mobile
+  
+  cupertino_icons: ^1.0.8
+  google_fonts: ^8.1.0
+  flutter_bloc: ^9.1.1
+  gap: ^3.0.1
+  image_picker: ^1.2.2
+  dotted_border: ^2.1.0
+  google_places_flutter: ^2.1.1
+  shared_preferences: ^2.5.5
+  get_it: ^7.7.0
+  dartz: ^0.10.1
+  equatable: ^2.0.5
+  dio: ^5.4.0
+  geolocator: ^14.0.2
+  skeletonizer: ^2.1.3
+  geocoding: ^4.0.0
+  http: ^1.6.0
+  flutter_map: ^8.3.2
